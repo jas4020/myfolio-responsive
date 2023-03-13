@@ -1,0 +1,331 @@
+/*main css start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'open sans' , sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.section_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+ .section_info p{
+    font-size: 16px;
+    color: #7e8287;
+    margin: auto;
+}
+ .section_info p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+/*common css end*/
+
+/*nav section css start*/
+#nav {
+    background-color: #02918c;
+  }
+  #nav #mymenu ul li a {
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    padding: 12px 25px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    -webkit-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+  }
+  
+  #nav #mymenu ul li:hover a {
+    background-color: #cfc91d;
+    color: #02918c;
+    border-radius: 50px;
+  }
+/*nav section css end*/
+
+/*banner section css start*/
+#banner {
+    height:600px;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #banner:after {
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #banner .bannerContent h4 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  #banner .bannerContent h1 {
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+  }
+  
+  #banner .bannerContent p {
+    font-size: 18px;
+  }
+  
+  #banner .bannerContent .bannerShape {
+    margin: 38px 0;
+  }
+  
+  #banner .bannerContent a {
+    font-size: 14px;
+    font-weight: 800;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 14px 57px;
+    display: inline-block;
+    -webkit-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+  }
+  
+  #banner .bannerContent a:hover {
+    border-radius: 15px;
+  }
+
+/*banner section css end*/
+
+
+/*about section css start*/
+#about{
+    text-align: center;
+    padding: 98px 0;
+}
+#about .section_info p{
+    width: 880px;
+}
+#about .about_item{
+    width: 25%;
+    border-right: 1px solid #7e8287;
+    padding: 0 60px;
+    margin: auto;
+    margin-top: 50px;
+}
+#about .about_item:last-child{
+    border: none;
+}
+
+#about .about_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 20px 0;
+}
+#about .about_item p{
+    font-size: 11px;
+    color: #7e8287;
+}
+
+/*about section css end*/
+
+/*service section css start*/
+
+#services{
+    background-image: url(../img/services_bg.jpg);
+    background-size: cover;
+}
+#services .inner_container{
+    width: 50%;
+}
+
+#services .services_item{
+    width: 50%;
+    text-align: left;
+    padding-top: 0px;
+}
+#services .services_item h4{
+    color: #7b7c7d;
+    font-weight: 800;
+    font-size: 16px;
+    
+}
+#services .services_item p{
+    color: #8d9195;
+    font-size: 14px;
+    width: 160px;
+    padding-top:10px;
+    padding-bottom: 27px;
+    margin-bottom: 45px;
+}
+#services .services_item img{
+    padding-top: 30px;
+}
+/*services css end*/
+
+/*my work css start*/
+
+#my_work .section_info{
+    text-align: center;
+}
+#my_work .section_info h2{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+#my_work .section_info p{
+    color: #8d9195;
+    font-size: 16px;
+    width: 672px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+#my_work .my_work_item{
+    width: 25%;
+    position: relative;
+ 
+}
+#my_work  .my_work_item  img{
+    width: 100%;
+    display: block;
+}
+#my_work .my_work_item .overly{
+    position: absolute;
+    top: 57px;
+    left: 26px;
+    background: rgba(2, 145, 140,0.85);
+    right: 26px;
+    bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    padding-top: 40px;
+    transition: .6s;
+    transform: scale(0);
+    border-radius: 50%;
+}
+#my_work .my_work_item:hover .overly{
+    transform: scale(1);
+
+    border-radius: 0%;
+}
+
+#my_work .my_work_item .overly h4{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+#my_work .my_work_item .overly p{
+    color: #ffff;
+    font-size: 14px;
+    width: 188px;
+    margin: auto;
+}
+
+/*my work css end*/
+
+/*contact me css start*/
+#contact .section_info h2 {
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+    padding-top: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#contact .section_info p {
+    color: #8d9195;
+    font-size: 16px;
+    text-align: center;
+    width: 678px;
+    margin: auto;
+   
+}
+#contact .contact_form{
+    background: #0b0b0b;
+    margin-top: 74px;
+}
+#contact .contact_form input,
+#contact .contact_form textarea{
+    display: block;
+    margin: auto;
+    background: none;
+    padding: 18px;
+    color: #949597;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid #242424;
+    /* text-transform: lowercase; */
+    font-size: 16px;
+    text-align: center;
+    width: 642px;
+    /* margin-top: 80px; */
+
+}
+#contact .contact_form input::placeholder,
+#contact .contact_form textarea::placeholder{
+    text-transform: uppercase;
+}
+#contact .contact_form input.lg,
+#contact .contact_form textarea.lg{
+   width: 935px;
+   resize: none;
+   font-family: 'Open Sans', sans-serif;
+}
+#contact .contact_form button{
+    color: #0b0b0b;
+    background: #cfc91d;
+    padding: 17px 70px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    font-size: 16px;
+    font-weight: 800;
+
+}
+/* contact css section end */
+/*fotter css section start */
+#fotter{
+    background: #000;
+}
+#fotter .contaner img{
+    display: block;
+    margin: auto;
+    padding: 35px;
+}
+/* fotter css section end */
+
+
+
+
+
+
+
